@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card mt-4 bg-dark text-white">
+        <div class="card-header text-center">
+          <h1 class="h4 text-white">
+            Inicio de sesión
+          </h1>
+        </div>
+        <div class="card-body">
+          <form action="./signin.component.html" method="POST">
+            <div class="mb-3">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Email"
+                autofocus
+              />
+            </div>
+            <div class="mb-3">
+              <label for="passsword">Contraseña:</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="Contraseña"
+              />
+            </div>
+            <button class="btn btn-primary btn-block">
+              Entrar
+            </button>
+          </form>
+        </div>
+  
+        <p class="text-center">¿No tienes una cuenta? <a routerLink="/signup" class="text-info">Regístrate</a></p>
+      </div>
+    </div>
+  </div> 
